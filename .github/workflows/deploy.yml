@@ -1,0 +1,18 @@
+name: Ping both services every 30 minutes
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"  # chạy mỗi 30 phút
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Render App
+        run: |
+          curl -s "https://afb-312w.onrender.com/ping?s=afb"
+
+      - name: Ping Replit App
+        run: |
+          curl -s "https://3a5a17e2-2045-4b60-bb6e-bfa8f9ea266c-00-5k8vx88tahp.pike.replit.dev/ping?s=atb"
