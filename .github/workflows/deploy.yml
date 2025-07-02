@@ -16,3 +16,11 @@ jobs:
       - name: Ping Replit App
         run: |
           curl -s "https://3a5a17e2-2045-4b60-bb6e-bfa8f9ea266c-00-5k8vx88tahp.pike.replit.dev/ping?s=atb"
+
+      - name: Ping Koyeb App
+        run: |
+          curl -s "https://afb.koyeb.app/ping?s=afb"
+      - name: Ping TiemGiamGia
+        run: |
+          curl -s "https://tiemgiamgia.com"    
+    
