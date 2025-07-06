@@ -22,5 +22,14 @@ jobs:
           curl -s "https://afb.koyeb.app/ping?s=afb"
       - name: Ping TiemGiamGia
         run: |
-          curl -s "https://tiemgiamgia.com"    
+          curl -s "https://tiemgiamgia.com"
+      - name: Ping aubotkank koy
+        run: |
+          curl -s "https://prominent-ambur-nguyentruongthank-44240cfc.koyeb.app/ping?s=atb"    
+         - name: Ping aubotkank on
+        run: |
+          curl -s "https://aubotkank.onrender.com/ping?s=afb"    
+    
+
+          
     
